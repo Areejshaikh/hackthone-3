@@ -49,9 +49,9 @@ export function Navber() {
   };
 
   return (
-    <nav className="flex mx-auto max-w-screen-xl w-full items-center justify-between md:justify-start py-5 md:py-6 px-4 xl:px-0">
+    <nav className="fixed top-0 bg-white flex mx-auto max-w-screen-xl w-full items-center justify-between py-5 md:py-6">
     
-      <span className="md:py-2 sm:pl-12 pl-8 md:pl-4 sm:text-2xl font-extrabold tracking-wider">
+      <span className="md:pl-0 pl-8 text-2xl font-extrabold tracking-wider">
         SHOP.CO
       </span>
 
@@ -66,8 +66,8 @@ export function Navber() {
       <div
         className={`${
           isMenuOpen ? "" : "hidden"
-        }  text-center
-             md:block absolute md:static top-16 left-0 w-full 
+        }  text-center fixed
+             md:block  md:static top-12 left-0 w-full 
              md:w-auto bg-gray-300 md:bg-transparent 
              shadow-md md:shadow-none transition-all duration-300 ease-in-out z-50`}
       >
@@ -152,9 +152,9 @@ const ListItem = React.forwardRef<
     <li>
       <NavigationMenuLink asChild>
         <Link
-          href={""}
+          href={"/product"}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            "fixed block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className
           )}
           {...props}
