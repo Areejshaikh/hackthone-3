@@ -1,0 +1,28 @@
+/* styles/Home.module.css */
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* 1 column for left, 3 columns for right side */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .leftColumn {
+    background-color: #f2f2f2; /* Light grey background for left column */
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+  }
+  
+  .rightColumn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal width columns */
+    gap: 20px;
+  }
+  
+  .rightItem {
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+  }
+  

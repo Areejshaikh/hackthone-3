@@ -1,0 +1,18 @@
+.bg-image {
+    background: url('../../../public/assets/hero-2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+
+}
+
+
+@media (max-width: 768px) {
+    .bg-image {
+        background: none;
+        flex-direction: row;
+        display: flex;
+      
+    }
+}
